@@ -18,12 +18,13 @@
 
 ![image](https://github.com/yb8119/Supermarket-POS-System/blob/Edit-Readme/pictures/Example.png)
 
-想要运行例程，在上图中点击browser（因为我这里选的是browser...）然后在下拉菜单里选择你想要执行的Scheme，编译运行即可。Scheme对应的源码可以在上述Test下同名文件夹中找到。
+想要运行例程，在上图中点击browser（因为我这里选的是browser...）然后在下拉菜单里选择你想要执行的Scheme，编译运行即可。Scheme对应的源码可以在上述Tests下同名文件夹中找到。
 
 打开这个FLTK.xcodeproj目的主要是为了编译出FLTK的库，我也是自己胡乱摸索出来的，可能有更好的办法，下面讲一下怎么生成库。
 
+给出的例子是绘制红白相间的棋盘，源代码在Git的tutorial文件夹下有。
 
-1.首先，任选一个Scheme，在Xcode顶部标签Product下选择Archive（图中所示为"hello"这个scheme生成的）
+1.首先，在打开的FLTK.xcodeproj中任选一个Scheme，在Xcode顶部标签Product下选择Archive（图中所示为"hello"这个scheme生成的）
 
 pict
 
@@ -33,7 +34,7 @@ puct
 
 点击Next，然后在你保存库的地方，就会出现一个文件夹，点进去之后，右键hello（"hello"这个scheme生成的），选择”显示包内容“，进入Content/Frameworks就可以看到FLTK的库了，记得将这个库拷贝出来。
 pict
-接下来我们就要将这个库和自己的Project关联起来，首先创建一个Command line tool 的 Project，例如FLTK_Tutorial，在其选项卡中选择Build Phase，在 Link Binary with Libraries中，选择"+"。
+接下来我们就要将这个库和自己的Project关联起来，首先创建一个Command line tool 的 Project（FLTK_Tutorial），导入红白棋盘的源文件，在project的选项卡中选择Build Phase，在 Link Binary with Libraries中，选择"+"。
 pict
 
-在Add Another...中选择刚刚生成的fltk.frameworks
+在Add Another...中选择刚刚拷贝出来的fltk.frameworks
