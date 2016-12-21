@@ -1,7 +1,0 @@
-文件说明:
-main.cpp				——	主程序
-FLTK_HEADERS.h	——	FLTK相关的头文件
-FLTK_functions.h		——	实现图形界面的函数
-File_Manipulate.h		——	文件操作函数，主要是输入和输出商品列表
-Goods.h				——	商品类的声明以及操作函数
-List.txt				——	商品列表示例文件
