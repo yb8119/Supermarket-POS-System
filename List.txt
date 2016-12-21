@@ -1,0 +1,6 @@
+Sweater		Clothes		10239523	321.5	piece	100.0	102		no
+Chicken 		Food		13006235	20.5		kilogram	19.0		300		no
+Milk			Drinks		24581024	5.0		kilogram	4.0		105		fresh
+LaTiao		Food		94628562	10.0		bag		1.0		1000	tasty
+Calculator	Stationary	24258287	50.0		piece	40.0		200		no
+
